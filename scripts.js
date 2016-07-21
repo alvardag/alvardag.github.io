@@ -9,7 +9,7 @@ $(function() {
   var $html = $('html');
 
   // CSS flag
-  $html.addClass('js');
+  //$html.addClass('js');
 
   // Preload background image
   var backgroundImageURL = $html.css('backgroundImage').replace('url("','').replace('")','');
