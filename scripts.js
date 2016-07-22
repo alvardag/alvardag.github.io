@@ -8,11 +8,9 @@ $(function() {
   // Cache elements
   var $html = $('html');
 
-  // CSS flag
-  //$html.addClass('js');
-  return;
   // Preload background image
-  var backgroundImageURL = $html.css('backgroundImage').replace('url("','').replace('")','');
+  var backgroundImageProp = $html.css('backgroundImage');
+  var backgroundImageURL = backgroundImageProp.match(/url\(["|']?([^"']*)["|']?\)/)[1];
   $html.css('backgroundImage', 'none'); // remove temporarily
     var backgroundImage = new Image();
     backgroundImage.onload = function(){
