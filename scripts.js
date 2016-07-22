@@ -10,7 +10,7 @@ $(function() {
 
   // CSS flag
   //$html.addClass('js');
-
+  return;
   // Preload background image
   var backgroundImageURL = $html.css('backgroundImage').replace('url("','').replace('")','');
   $html.css('backgroundImage', 'none'); // remove temporarily
