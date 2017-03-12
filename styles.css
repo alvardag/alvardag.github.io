@@ -118,7 +118,7 @@ section h2 span {
   line-height: 1.8em;
   margin-right: 1.5vw;
   padding-right: 3.5vw;
-  border-right: 0.2ex solid white;
+  border-right: 0.15ex solid white;
 }
 
 section h2 img {
@@ -147,6 +147,10 @@ footer a img {
 }
 
 video {
+  -webkit-filter: grayscale(1);
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(100%);
   display: block;
   position: fixed;
   top: 50%;
