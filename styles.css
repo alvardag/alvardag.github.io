@@ -109,17 +109,22 @@ section h2 {
   position: absolute;
   top: 50%;
   left: 50%;
+  font-weight: bold;
   transform: translate(-50%, -50%);
 }
 
 section h2 span {
   display: inline-block;
-  margin-right: 3vw;
+  line-height: 1.8em;
+  margin-right: 1.5vw;
+  padding-right: 3.5vw;
+  border-right: 0.2ex solid white;
 }
 
 section h2 img {
-  height: 1.5em;
+  height: 1.3em;
   vertical-align: middle;
+  margin-top: -0.2em;
 }
 
 footer {
@@ -134,11 +139,11 @@ footer {
 
 footer a {
   margin: 0 3%;
-  display: inline-block;
 }
 
 footer a img {
   width: 20px;
+  height: 20px;
 }
 
 video {
@@ -189,15 +194,5 @@ video {
 
   footer a {
     margin: 0 1%;
-  }
-
-  footer a img {
-    height: 25%;
-  }
-}
-
-@media (min-width: 1024px) {
-  section h2 {
-    font-size: 6vw;
   }
 }
